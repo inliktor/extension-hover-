@@ -1,21 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="ru">
-<head>
-  <title>Элемент Вращения</title>
-  <meta charset="UTF-8"> 
-  <link rel="stylesheet" href="/extension-hover-/style.css">
-</head>
-<body>
-  <h2>Настройки вращения</h2>
-  <input type="text" id="tagName" placeholder="Введите имя тега (например, div)">
-  <input type="number" id="duration" placeholder="Длительность (в секундах)">
-  <input type="number" id="degrees" placeholder="Градусы вращения">
-  <input type="checkbox"
-  <button id="applyRotation">Применить вращение</button>
-  <script src="popup.js"></script>
-</body>
-</html> -->
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -84,7 +66,11 @@
 <body>
   <div class="container">
     <h2>Настройки вращения</h2>
+    <select id="elementSelector">
+      <option value="">Выберите элемент или введите вручную</option>
+    </select>
     <input type="text" id="tagName" placeholder="Введите имя тега (например, div)">
+    <input type="text" id="className" placeholder="Введите имя класса (необязательно)">
     <input type="number" id="duration" placeholder="Длительность (в секундах)">
     <input type="number" id="degrees" placeholder="Градусы вращения">
     <div class="checkbox-container">
@@ -96,3 +82,64 @@
   <script src="popup.js"></script>
 </body>
 </html>
+
+<!-- <style>
+  body {
+    width: 300px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+  }
+  .container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  h2 {
+    color: #333;
+    margin-top: 0;
+  }
+  input, select, button {
+    margin: 10px 0;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,0,0,0.5);
+    transition: all 0.3s ease;
+  }
+  button:hover::after {
+    left: 0;
+  }
+  button:hover {
+    color: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  }
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+  .checkbox-container input {
+    margin-right: 10px;
+    width: auto;
+  }
+</style> -->
