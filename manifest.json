@@ -1,6 +1,6 @@
 {
     "manifest_version": 2,
-    "name": "5 континент",
+    "name": "пятый континет",
     "version": "1.0",
     "description": "Добавляет вращение к выбранному HTML элементу",
     "permissions": ["activeTab"],
@@ -12,5 +12,5 @@
         "matches": ["<all_urls>"],
         "js": ["content.js"]
       }
-    ]
+    ] 
   }
