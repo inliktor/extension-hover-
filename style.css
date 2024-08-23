@@ -1,37 +1,54 @@
-html{font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;}
-body { background:linear-gradient(45deg, #30cfd0, #330867);; width: 300px; padding: 10px; }
+body{font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;}
+
 input, button { margin: 5px 0; }
 input {width: 220px;}
 button {background-color: rgba(148, 148, 148, 0.39);border-radius:6px;}
 button:hover{box-shadow: 2px 2px 3px 2px rgba(39, 39, 39, 0.315); };
+<<<<<<< HEAD
 
 /* body {
+=======
+body {
+>>>>>>> 73108686e12276c1352a2fe77f68e1db7d1adc66
     width: 300px;
     padding: 20px;
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
   }
+<<<<<<< HEAD
   
+=======
+>>>>>>> 73108686e12276c1352a2fe77f68e1db7d1adc66
   .container {
     background-color: #ffffff;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
   }
+<<<<<<< HEAD
   
+=======
+>>>>>>> 73108686e12276c1352a2fe77f68e1db7d1adc66
   h2 {
     color: #333;
     margin-top: 0;
   }
+<<<<<<< HEAD
   
   input, select, button {
+=======
+  input, button {
+>>>>>>> 73108686e12276c1352a2fe77f68e1db7d1adc66
     margin: 10px 0;
     width: 100%;
     padding: 8px;
     border: 1px solid #ddd;
     border-radius: 5px;
   }
+<<<<<<< HEAD
   
+=======
+>>>>>>> 73108686e12276c1352a2fe77f68e1db7d1adc66
   button {
     background-color: #4CAF50;
     color: white;
@@ -41,7 +58,10 @@ button:hover{box-shadow: 2px 2px 3px 2px rgba(39, 39, 39, 0.315); };
     position: relative;
     overflow: hidden;
   }
+<<<<<<< HEAD
   
+=======
+>>>>>>> 73108686e12276c1352a2fe77f68e1db7d1adc66
   button::after {
     content: '';
     position: absolute;
@@ -52,23 +72,39 @@ button:hover{box-shadow: 2px 2px 3px 2px rgba(39, 39, 39, 0.315); };
     background-color: rgba(255,0,0,0.5);
     transition: all 0.3s ease;
   }
+<<<<<<< HEAD
   
   button:hover::after {
     left: 0;
   }
   
+=======
+  button:hover::after {
+    left: 0;
+  }
+>>>>>>> 73108686e12276c1352a2fe77f68e1db7d1adc66
   button:hover {
     color: white;
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
   }
+<<<<<<< HEAD
   
+=======
+>>>>>>> 73108686e12276c1352a2fe77f68e1db7d1adc66
   .checkbox-container {
     display: flex;
     align-items: center;
     margin: 10px 0;
   }
+<<<<<<< HEAD
   
   .checkbox-container input {
     margin-right: 10px;
     width: auto;
   } */
+=======
+  .checkbox-container input {
+    margin-right: 10px;
+    width: auto;
+  }
+>>>>>>> 73108686e12276c1352a2fe77f68e1db7d1adc66
