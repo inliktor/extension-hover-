@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var applyButton = document.getElementById('applyRotation');
+    let applyButton = document.getElementById('applyRotation');
     applyButton.addEventListener('click', function() {
-      var tagName = document.getElementById('tagName').value;
-      var duration = document.getElementById('duration').value;
-      var degrees = document.getElementById('degrees').value;
+      let tagName = document.getElementById('tagName').value;
+      let duration = document.getElementById('duration').value;
+      let degrees = document.getElementById('degrees').value;
   
       chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
         chrome.tabs.sendMessage(tabs[0].id, {
@@ -15,3 +15,28 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
   });
+
+  document.addEventListener('DOMContentLoaded', function() {
+  //   var applyButton = document.getElementById('applyRotation');
+  //   applyButton.addEventListener('click', function() {
+  //     var tagName = document.getElementById('tagName').value;
+  //     var duration = document.getElementById('duration').value;
+  //     var degrees = document.getElementById('degrees').value;
+  //     var continuousRotation = document.getElementById('continuousRotation').checked;
+      
+  //     if (!tagName || !duration || !degrees) {
+  //       alert('Пожалуйста, заполните все поля');
+  //       return;
+  //     }
+  
+  //     chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+  //       chrome.tabs.sendMessage(tabs[0].id, {
+  //         action: "applyRotation",
+  //         tagName: tagName,
+  //         duration: duration,
+  //         degrees: degrees,
+  //         continuousRotation: continuousRotation
+  //       });
+  //     });
+  //   });
+  // });
