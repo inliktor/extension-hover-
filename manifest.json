@@ -1,5 +1,5 @@
 {
-    "manifest_version": 2,
+    "manifest_version": 3,
     "name": "пятый континет",
     "version": "1.0",
     "description": "Добавляет вращение к выбранному HTML элементу",
