@@ -6,7 +6,14 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 
     for (let i = 0; i < elements.length; i++) {
       const tagName = elements[i].tagName.toLowerCase();
-      const className = elements[i].className.trim();
+      let className = elements[i].className;
+
+      if (typeof className !== 'string') {
+        className = '';
+      } else {
+        className = className.trim();
+      }
+
       const key = tagName + (className ? '.' + className : '');
 
       if (!addedElements.has(key)) {
