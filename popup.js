@@ -6,8 +6,8 @@ document.addEventListener('DOMContentLoaded', function() {
   const durationInput = document.getElementById('duration');
   const degreesInput = document.getElementById('degrees');
   const continuousRotationCheckbox = document.getElementById('continuousRotation');
-
-  // Получаем список элементов со страницы
+  
+ 
   chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
     chrome.tabs.sendMessage(tabs[0].id, {action: "getElements"}, function(response) {
       if(response && response.elements) {
@@ -21,7 +21,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // Обработчик изменения выбранного элемента
   elementSelector.addEventListener('change', function() {
     if(this.value) {
       const selectedElement = JSON.parse(this.value);
